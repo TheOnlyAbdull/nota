@@ -5,78 +5,53 @@ import { createContext, useState } from "react";
 import AddModal from "../AddModal";
 
 
-// const defaultCategories = [
-//   {
-//     category: "Market",
-//     tasks: [
-//       {
-//         task: "Buy groceries",
-//         completed: true,
-//         important: false,
-//       },
-//       {
-//         task: "Find new recipe",
-//         completed: false,
-//         important: true,
-//       },
-//       {
-//         task: "Pay bills",
-//         completed: true,
-//         important: false,
-//       },
-//     ],
-//   },
-//   {
-//     category: "Work",
-//     tasks: [
-//       {
-//         task: "Finish project report",
-//         completed: true,
-//         important: true,
-//       },
-//       {
-//         task: "Attend team meeting",
-//         completed: false,
-//         important: false,
-//       },
-//       {
-//         task: "Schedule client call",
-//         completed: false,
-//         important: true,
-//       },
-//       {
-//         task: "Schedule family call",
-//         completed: false,
-//         important: true,
-//       },
-//     ],
-//   },
-//   {
-//     category: "Personal",
-//     tasks: [
-//       {
-//         task: "Go for a run",
-//         completed: true,
-//         important: false,
-//       },
-//       {
-//         task: "Read a book",
-//         completed: false,
-//         important: true,
-//       },
-//       {
-//         task: "Spend time with family",
-//         completed: false,
-//         important: true,
-//       },
-//     ],
-//   },
-// ];
+const defaultCategories = [
+  {
+    category: "Work",
+    tasks: [
+      {
+        task: "Attend team meeting",
+        completed: false,
+        important: false,
+      },
+      {
+        task: "Schedule client call",
+        completed: false,
+        important: true,
+      },
+      {
+        task: "Schedule family call",
+        completed: false,
+        important: true,
+      },
+    ],
+  },
+  {
+    category: "Personal",
+    tasks: [
+      {
+        task: "Go for a run",
+        completed: true,
+        important: false,
+      },
+      {
+        task: "Read a book",
+        completed: false,
+        important: true,
+      },
+      {
+        task: "Spend time with family",
+        completed: false,
+        important: true,
+      },
+    ],
+  },
+];
 
 export const TodoContext = createContext();
 
 function AppLayout() {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([...defaultCategories]);
   const [active, setActive] = useState("Home");
   const [modal, setModal] = useState(false);
   const [category, setCategory] = useState("");
