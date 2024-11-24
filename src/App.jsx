@@ -12,7 +12,7 @@ import GetStarted from "./pages/GetStarted";
 function App() {
   return (
     <NotaProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/nota">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="features" element={<Features />} />
