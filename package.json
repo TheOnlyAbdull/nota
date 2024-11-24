@@ -1,13 +1,13 @@
 {
   "name": "nota",
   "private": true,
+  "homepage": "https://theonlyabdull.github.io/nota/",
   "version": "0.0.0",
-  "homepage": "https://theonlyabdull.github.io/nota",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
