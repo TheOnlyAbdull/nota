@@ -6,16 +6,14 @@ import { useNavigate } from "react-router-dom";
 // import HomeContent from "../components/HomeContent";
 
 function HomePage() {
-  const {firstName, lastName} = useContext(NotaContext);
+  // const {firstName, lastName} = useContext(NotaContext);
   const navigate = useNavigate();
 
   function getStarted(){
 
-    if(firstName && lastName){
+   
       navigate('/appLayout')
-    }else{
-      navigate('/appLayout')
-    }
+
   }
   return (
     <div className="home-page">

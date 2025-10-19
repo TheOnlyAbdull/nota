@@ -6,16 +6,14 @@ import { NotaContext } from "../context/NotaContexts";
 
 function Header() {
   const [isActive, setIsActive] = useState(true);
-  const {firstName, lastName} = useContext(NotaContext);
+  // const {firstName, lastName} = useContext(NotaContext);
   const navigate = useNavigate();
 
   function getStarted(){
 
-    if(firstName && lastName){
+    
       navigate('/appLayout')
-    }else{
-      navigate('/appLayout')
-    }
+    
   }
   return (
     <header>
