@@ -14,13 +14,13 @@ function HomePage() {
     if(firstName && lastName){
       navigate('/appLayout')
     }else{
-      navigate('/getStarted')
+      navigate('/appLayout')
     }
   }
   return (
-    <div>
+    <div className="home-page">
       <Header />
-      <main className="container">
+      <main className="container ">
         <div className="home-content">
           <h1>
             Are you tired of juggling multiple <span>tasks?</span>

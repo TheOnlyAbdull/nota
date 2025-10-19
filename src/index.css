@@ -4,6 +4,7 @@
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    
 }
 
 /* #### HEADER #### */
@@ -89,6 +90,10 @@ nav {
 }
 
 /* #### HOME-CONTENT #### */
+/* .home-page{
+  background-color: #f4f5f7;
+
+} */
 .container {
   margin-top: 11rem;
   /* margin-bottom: 5.5rem; */
@@ -97,6 +102,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .home-content {
   width: 60%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -691,6 +697,7 @@ footer .bend-footer {
 }
 
 @media (max-width: 900px) {
+ 
   .mobile-logo,
   .menu {
     display: block;
