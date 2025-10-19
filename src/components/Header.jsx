@@ -14,7 +14,7 @@ function Header() {
     if(firstName && lastName){
       navigate('/appLayout')
     }else{
-      navigate('/getStarted')
+      navigate('/appLayout')
     }
   }
   return (
